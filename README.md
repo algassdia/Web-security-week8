@@ -19,22 +19,32 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 Vulnerability #1: SQL Injection.
 The id parameter is unsanitized and can be bypassed on the salesperson page.
 
+ ![](./Question1.gif)
+
+
 Vulnerability #2: Session Hijacking/Fixation.
 A new session id is not generated to log back in. The session id that is generated at first loggin in reused. 
 
+ ![](./Question2.gif)
 
 ## Green
 
 Vulnerability #1: User enumeration.
 Unbolded error message is displayed if the user does not exist; That gives information of possible username in the database.
 
+ ![](./Question4.gif)
+
 Vulnerability #2: Stored Cross-Site Scrypting.
 The input fields for "name" and "feedback" are unsanitized. Unautorized users can send malicious messages with embedded scripts.
+
+ ![](./Question5.gif)
 
 
 ## Red
 
 Vulnerability #1: Insecure Direct Object Reference.
 Hidden salesperson id are accessible.
+
+ ![](./Question3.gif)
 
 Vulnerability #2: __________________
